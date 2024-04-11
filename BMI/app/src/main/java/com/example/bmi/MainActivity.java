@@ -10,13 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private TextView txvShow;
+private TextView txvShow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txvShow = (TextView) findViewById(R.id.txvShow);
+        TextView txvShow = (TextView) findViewById(R.id.txvShow);
         txvShow.setTextSize(36);
         Button btnCalc = (Button) findViewById(R.id.btnCalc);
         Button btnClear = (Button) findViewById(R.id.btnClear);
@@ -29,20 +29,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EditText edtHeight = (EditText) findViewById(R.id.edtHeight);
         EditText edtWeight = (EditText) findViewById(R.id.edtWeight);
 
-        if (v.getId() == R.id.btnCalc) {
+        if(v.getId() == R.id.btnCalc){
             double height = Double.parseDouble(edtHeight.getText().toString());
             double weight = Double.parseDouble(edtWeight.getText().toString());
-            double bmi = weight / Math.pow(height/100.0 , 2);
+            double bmi = weight/ Math.pow(height/100.0, 2);
             if (bmi >= 24)
                 txvShow.setTextColor(Color.RED);
-            else if (bmi < 18.5)
+            else if(bmi < 18.5)
                 txvShow.setTextColor(Color.BLUE);
             else
                 txvShow.setTextColor(Color.GREEN);
 
             txvShow.setText(String.format("%.2f", bmi));
         }
-        else {
+        else{
             edtHeight.setText("0");
             edtWeight.setText("0");
             txvShow.setText("");
