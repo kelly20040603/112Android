@@ -1,21 +1,22 @@
 {
   "project_info": {
-    "project_number": "48195794483",
-    "project_id": "fir-demo2024-7f039",
-    "storage_bucket": "fir-demo2024-7f039.appspot.com"
+    "project_number": "713113154075",
+    "firebase_url": "https://fir-demo2024-89310-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-demo2024-89310",
+    "storage_bucket": "fir-demo2024-89310.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:48195794483:android:e8da347d197e4cd14a1546",
+        "mobilesdk_app_id": "1:713113154075:android:98d40d1ca9082d40a53ebe",
         "android_client_info": {
-          "package_name": "com.example.firebasedemo"
+          "package_name": "com.demo.firebasefirsttry"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAEHYRaFOTDpjro7_byhNXNAQYxfAfG5Ik"
+          "current_key": "AIzaSyBXezCheE2oui9D10QbZzq67oRk6h4A_Fs"
         }
       ],
       "services": {
